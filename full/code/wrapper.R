@@ -1,10 +1,8 @@
 library(data.table)
 
 
-#note that in the setup,
-#the extr.rate function is different than in intial versions of the code
 #for the "empf" distribution
-#you now put a semicolon separated list
+#you put a semicolon separated list
 #of the form value1;proportion1;value2,proportion2; etc.
 #into the pars column of the input spreadsheet
 #(if and only if you are using empf as your distribution)
@@ -20,7 +18,6 @@ max_time <- 801 + 730
 warmup <- 730
 reps <- 35
 
-#temp - CHANGE THIS TO BE MORE GENERALISABLE ###
 #time at which the post-covid surge starts ####
 #i.e. this is the first day of June 2020
 #for the max_time and warmup values above,
@@ -132,7 +129,7 @@ node_trackers[,time:=time-warmup,]
 
 saveRDS(list(schedules=schedules,
              node_trackers=node_trackers),
-        "./sim_results/what_if_one.rds")
+        "./sim_results/baseline.rds")
 
 
 source("./output_plots.R")
