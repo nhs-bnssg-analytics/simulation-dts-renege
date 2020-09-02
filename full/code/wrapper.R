@@ -31,14 +31,13 @@ surge_time <- 1166
 
 
 #network setup
-input_file <- "./scenario_inputs/what_if_one/network_what_if_one.csv"
+input_file <- "./network_baseline.csv"
 
-#if using changing arrivals over time
-#arrivals_file <- "./changing_arrivals2.csv"
-arrivals_file <- "./scenario_inputs/what_if_one/arrivals_what_if_one.csv"
+#time varying parameters - arrivals, lengths of service, capacities
+arrivals_file <- "./arrivals_baseline.csv"
 
 #postcov transitions
-postcov_flow_file <- "./scenario_inputs/what_if_one/postcov_flow_what_if_one.csv"
+postcov_flow_file <- "./postcov_baseline.csv"
 
 #leave the rest alone
 source("./setup.R")
@@ -136,4 +135,4 @@ saveRDS(list(schedules=schedules,
         "./sim_results/what_if_one.rds")
 
 
-source("./outputs/output_plots_parlapply.R")
+source("./output_plots.R")
