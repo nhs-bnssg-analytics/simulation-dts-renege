@@ -27,7 +27,7 @@ warmup <- 50
 #n.b. recommend doing more than 10
 reps <- 10
 #name of your input csv
-input_file <- "../dummy_inputs.csv"
+input_file <- "./network_input.csv"
 
 
 #leave the rest alone
