@@ -1,0 +1,15 @@
+,social_prescribing,iapt_assessment,iapt_therapy,gp_initial,gp_long_term_low_intensity,gp_long_term_high_intensity,mhp_triage,mhp_crisis,mhp_community,inpatient,planned_end_of_care,other_end,rejected_and_lost,drop_out,arr.dist,arr.par,srv.dist,srv.par,capacity,wt_fn,wt_params,wt_social_prescribing,wt_iapt_assessment,wt_iapt_therapy,wt_gp_initial,wt_gp_long_term_low_intensity,wt_gp_long_term_high_intensity,wt_mhp_triage,wt_mhp_crisis,wt_mhp_community,wt_inpatient,wt_planned_end_of_care,wt_other_end,wt_rejected_and_lost,wt_drop_out
+social_prescribing,,,,,,,,,,,1,,,,pois,9,lnorm,4.020459;0.3844108,400,p[4]+((p[1]-p[4])/(1+(x/p[3])^p[2])),0;5;30;1,,,,,,,,,,,,,,1
+iapt_assessment,,,0.5,,,,,,,,0.5,,,,pois,32,epmf,1;0.2;2;0.5;3;0.3,30,p[4]+((p[1]-p[4])/(1+(x/p[3])^p[2])),0;5;100;1,,,,,,,,,,,,,,1
+iapt_therapy,,,,,,,,,,,0.9,0.1,,,const,0,epmf,14;0.1;21;0.08;28;0.07;35;0.08;42;0.1;49;0.15;56;0.04;63;0.035;70;0.03;77;0.02;84;0.02;91;0.04;98;0.03;105;0.015;112;0.015;119;0.015;126;0.015;133;0.015;140;0.015;147;0.01;154;0.01;161;0.01;168;0.01;175;0.01;182;0.01;189;0.01;196;0.01;203;0.01;210;0.01;217;0.01;224;0.005;,500,p[4]+((p[1]-p[4])/(1+(x/p[3])^p[2])),0;1;120;1,,,,0.2,,,,,,,,,,0.8
+gp_initial,0.03,0.21,,,0.07,,0.66,,,,0.03,,,,pois,150,epmf,1;0.5;15;0.1;22;0.2;29;0.1;36;0.05;43;0.05,2500,,,,,,,,,,,,,,,,
+gp_long_term_low_intensity,,,,,,,,,,,0.5,0.5,,,const,0,epmf,182;0.04;365;0.2;547;0.04;730;0.2;912;0.02;1095;0.5,15000,,,,,,,,,,,,,,,,
+gp_long_term_high_intensity,,,,,,,,,,,,1,,,const,0,lnorm,6.625227; 0.8640404,50000,,,,,,,,,,,,,,,,
+mhp_triage,,,,,,0.425,,0.075,0.075,,,,0.425,,const,0,const,1,200,,,,,,,,,,,,,,,,
+mhp_crisis,,,,,,,,,0.6,0.3,,0.1,,,const,0,lnorm,2.603037;0.2684041,140,,,,,,,,,,,,,,,,
+mhp_community,,,,,0.15,,,0.05,,,0.4,0.4,,,const,0,lnorm,5.863699;0.2690675,4000,p[4]+((p[1]-p[4])/(1+(x/p[3])^p[2])),0;5;60;1,,,,0.5,,,,0.05,,,,0.45,,
+inpatient,,,,,,,,,0.9,,,0.1,,,pois,1,lnorm,2.288457;0.1680954,45,,,,,,,,,,,,,,,,
+planned_end_of_care,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+other_end,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+rejected_and_lost,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+drop_out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
