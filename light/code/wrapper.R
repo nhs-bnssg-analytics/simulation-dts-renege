@@ -1,10 +1,7 @@
 library(data.table)
 
-
-#note that in the setup,
-#the extr.rate function has now been changed (2020-07-20)
 #for the "empf" distribution
-#you now put a semicolon separated list
+#you put a semicolon separated list
 #of the form value1;proportion1;value2,proportion2; etc.
 #into the pars column of the input spreadsheet
 #(if and only if you are using empf as your distribution)
