@@ -130,6 +130,3 @@ node_trackers[,time:=time-warmup,]
 saveRDS(list(schedules=schedules,
              node_trackers=node_trackers),
         "./sim_results/baseline.rds")
-
-
-source("./output_plots.R")
