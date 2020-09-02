@@ -1,0 +1,6 @@
+,service_point_one,service_point_two,service_point_three,exit_one,exit_two,arr.dist,srv.dist,srv.par,capacity,wt_fn,wt_params,wt_service_point_one,wt_service_point_two,wt_service_point_three,wt_exit_one,wt_exit_two
+service_point_one,,,,,,,,,,,,,,,,
+service_point_two,,,,,,,,,,,,,,,,
+service_point_three,,,,,,,,,,,,,,,,
+exit_one,,,,,,,,,,,,,,,,
+exit_two,,,,,,,,,,,,,,,,
